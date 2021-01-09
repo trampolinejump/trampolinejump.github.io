@@ -11,7 +11,7 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/favicon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
@@ -38,7 +38,9 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top  d-flex justify-content-center align-items-center header-transparent">
+  <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+
+
 
     <nav class="nav-menu d-none d-lg-block">
       <ul>
@@ -48,6 +50,8 @@
         <li><a href="#testimonials">Fun Facts</a></li>
         <li><a href="#portfolio">Gallery</a></li>
         <li><a href="#pricing">Hmm.....</a></li>
+        <div class="right-corner2">    <li><a href="index.html">Logout</a></li></div>
+
 
       </ul>
     </nav><!-- .nav-menu -->
@@ -89,7 +93,7 @@
                 hour = minute * 60,
                 day = hour * 24;
 
-               //let birthday = "Jan 12, 2000 00:00:00",
+            //   let birthday = "Jan 12, 2000 00:00:00",
                 countDown = new Date(birthday).getTime(),
 
 
@@ -97,6 +101,7 @@
 
                   let now = new Date().getTime(),
                   distance = now - countDown;
+
 
                   document.getElementById("days").innerText = Math.floor(distance / (day)),
                   document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
@@ -189,76 +194,6 @@
     </div>
   </section><!-- End About Me Section -->
 
-  <!--  <section id="resume" class="resume">
-  <div class="container">
-
-  <div class="section-title">
-  <span>My Timeline</span>
-  <h2>My Timeline</h2>
-</div>
-
-<div class="row">
-<div class="col-lg-6">
-<h3 class="resume-title">My Birth</h3>
-<div class="resume-item pb-0">
-<h4>January 12, 2000</h4>
-<p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-<p>
-<ul>
-<li>Portland par 127,Orlando, FL</li>
-<li>(123) 456-7891</li>
-<li>alice.barkley@example.com</li>
-</ul>
-</p>
-</div>
-
-<h3 class="resume-title">Education</h3>
-<div class="resume-item">
-<h4>Master of Fine Arts &amp; Graphic Design</h4>
-<h5>2015 - 2016</h5>
-<p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-<p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-</div>
-<div class="resume-item">
-<h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-<h5>2010 - 2014</h5>
-<p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-<p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-</div>
-</div>
-<div class="col-lg-6">
-<h3 class="resume-title">Professional Experience</h3>
-<div class="resume-item">
-<h4>Senior graphic design specialist</h4>
-<h5>2019 - Present</h5>
-<p><em>Experion, New York, NY </em></p>
-<p>
-<ul>
-<li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-<li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-<li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-<li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-</ul>
-</p>
-</div>
-<div class="resume-item">
-<h4>Graphic design specialist</h4>
-<h5>2017 - 2018</h5>
-<p><em>Stepping Stone Advertising, New York, NY</em></p>
-<p>
-<ul>
-<li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-<li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-<li>Recommended and consulted with clients on the most appropriate graphic design</li>
-<li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-</ul>
-</p>
-</div>
-</div>
-</div>
-
-</div>
-</section> -->
 
 
 <!-- ======= My Services Section ======= -->
@@ -429,14 +364,14 @@
 
 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
   <div class="icon-box">
-    <img src="assets/img/QR/rama.png" style="width:200px;height:250px;" >
+    <img src="assets/img/QR/arshadh.png" style="width:200px;height:250px;" >
   </br></br>
 </div>
 </div>
 
 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
   <div class="icon-box">
-    <img src="assets/img/QR/mathesh.png" style="width:200px;height:250px;" >
+    <img src="assets/img/QR/kaviya.png" style="width:200px;height:250px;" >
   </br></br>
 </div>
 </div>
@@ -525,7 +460,7 @@
       </div>
 
       <ul id="portfolio-flters" class="d-flex justify-content-center">
-        <li data-filter=".filter-frnd">Col</li>
+        <li data-filter=".filter-frnd" class="active">Col</li>
         <li data-filter=".filter-app">Skool</li>
         <li data-filter=".filter-card">Fam</li>
         <li data-filter=".filter-web">Cringe</li>
@@ -790,10 +725,10 @@
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
-                      <p>Andavar has successfully taken his 21st avatar. Thanks for helping him out. <b>You Did It</b>. I mean, you do realise the whole Andavar character is YOU, right? You can't be that bad :D Happy Birthday!<b> YOU MAY NOW OPEN YOUR GIFTS!!</b></p>
+                      <p>Andavar has successfully taken his 21st avatar. Congratulations on helping him out. <b>You Did It</b>. I mean, you do realise the whole Andavar character is YOU, right? You can't be that bad :D Happy Birthday!<b> YOU MAY NOW OPEN YOUR GIFTS!!</b></p>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <a href="inner-page.html" class="btn-buy" >Click here to open your FIRST GIFT</a>
                     </div>
                   </div>
                 </div>
@@ -802,171 +737,7 @@
           </div>
         </div>
       </section>
-      <!--
-      <section id="pricing" class="pricing">
-      <div class="container">
 
-      <div class="section-title">
-      <span>Pricing</span>
-      <h2>Pricing</h2>
-      <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
-    </div>
-
-    <div class="row">
-
-    <div class="col-lg-3 col-md-6">
-    <div class="box">
-    <h3>Free</h3>
-    <h4><sup>$</sup>0<span> / month</span></h4>
-    <ul>
-    <li>Aida dere</li>
-    <li>Nec feugiat nisl</li>
-    <li>Nulla at volutpat dola</li>
-    <li class="na">Pharetra massa</li>
-    <li class="na">Massa ultricies mi</li>
-  </ul>
-  <div class="btn-wrap">
-  <a href="#" class="btn-buy">Buy Now</a>
-</div>
-</div>
-</div>
-
-<div class="col-lg-3 col-md-6 mt-4 mt-md-0">
-<div class="box featured">
-<h3>Business</h3>
-<h4><sup>$</sup>19<span> / month</span></h4>
-<ul>
-<li>Aida dere</li>
-<li>Nec feugiat nisl</li>
-<li>Nulla at volutpat dola</li>
-<li>Pharetra massa</li>
-<li class="na">Massa ultricies mi</li>
-</ul>
-<div class="btn-wrap">
-<a href="#" class="btn-buy">Buy Now</a>
-</div>
-</div>
-</div>
-
-<div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-<div class="box">
-<h3>Developer</h3>
-<h4><sup>$</sup>29<span> / month</span></h4>
-<ul>
-<li>Aida dere</li>
-<li>Nec feugiat nisl</li>
-<li>Nulla at volutpat dola</li>
-<li>Pharetra massa</li>
-<li>Massa ultricies mi</li>
-</ul>
-<div class="btn-wrap">
-<a href="#" class="btn-buy">Buy Now</a>
-</div>
-</div>
-</div>
-
-<div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-<div class="box">
-<span class="advanced">Advanced</span>
-<h3>Ultimate</h3>
-<h4><sup>$</sup>49<span> / month</span></h4>
-<ul>
-<li>Aida dere</li>
-<li>Nec feugiat nisl</li>
-<li>Nulla at volutpat dola</li>
-<li>Pharetra massa</li>
-<li>Massa ultricies mi</li>
-</ul>
-<div class="btn-wrap">
-<a href="#" class="btn-buy">Buy Now</a>
-</div>
-</div>
-</div>
-
-</div>
-
-</div>
-</section><!-- End Pricing Section -->
-
-<!-- ======= Contact Me Section ======= -->
-<!--    <section id="contact" class="contact">
-<div class="container">
-
-<div class="section-title">
-<span>Contact Me</span>
-<h2>Contact Me</h2>
-<p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
-</div>
-
-<div class="row">
-
-<div class="col-lg-6">
-
-<div class="row">
-<div class="col-md-12">
-<div class="info-box">
-<i class="bx bx-share-alt"></i>
-<h3>Social Profiles</h3>
-<div class="social-links">
-<a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-<a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-<a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-<a href="#" class="google-plus"><i class="icofont-skype"></i></a>
-<a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
-</div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="info-box mt-4">
-<i class="bx bx-envelope"></i>
-<h3>Email Me</h3>
-<p>contact@example.com</p>
-</div>
-</div>
-<div class="col-md-6">
-<div class="info-box mt-4">
-<i class="bx bx-phone-call"></i>
-<h3>Call Me</h3>
-<p>+1 5589 55488 55</p>
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="col-lg-6">
-<form action="forms/contact.php" method="post" role="form" class="php-email-form">
-<div class="form-row">
-<div class="col-md-6 form-group">
-<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-<div class="validate"></div>
-</div>
-<div class="col-md-6 form-group">
-<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-<div class="validate"></div>
-</div>
-</div>
-<div class="form-group">
-<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-<div class="validate"></div>
-</div>
-<div class="form-group">
-<textarea class="form-control" name="message" rows="6" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-<div class="validate"></div>
-</div>
-<div class="mb-3">
-<div class="loading">Loading</div>
-<div class="error-message"></div>
-<div class="sent-message">Your message has been sent. Thank you!</div>
-</div>
-<div class="text-center"><button type="submit">Send Message</button></div>
-</form>
-</div>
-
-</div>
-
-</div>
-</section><!-- End Contact Me Section -->
 
 </main><!-- End #main -->
 
